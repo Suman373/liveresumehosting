@@ -1,6 +1,6 @@
 {
   "name": "resume",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Personal live PDF viewing website with stable path",
   "main": "index.js",
   "scripts": {
