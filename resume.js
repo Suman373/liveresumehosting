@@ -7,7 +7,7 @@ const publicDirectory = path.join(__dirname, 'public');
 const htmlPath = path.join(__dirname, 'index.html');
 const scriptRegex = /<script>[\s\S]*?<\/script>/;
 const git = simpleGit();
-
+const BASE_URL = `https://suman373.github.io/liveresumehosting`;
 
 async function addChangesAndCommit() {
   try {
@@ -52,7 +52,7 @@ async function parseResume() {
     console.log("Starting index.html parsing...");
     const htmlData = fs.readFileSync(htmlPath, 'utf-8');
     if (htmlData.match(scriptRegex)) {
-      const newScript = `<script>window.location.href='public/${file}'</script>`;
+      const newScript = `<script>window.location.href='${BASE_URL}/public/${file}'</script>`;
       const newContent = htmlData.replace(scriptRegex, newScript);
       fs.writeFileSync(htmlPath, newContent);
       console.log("HTML updated successfully");
