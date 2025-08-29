@@ -1,0 +1,16 @@
+{
+  "name": "resume",
+  "version": "1.0.1",
+  "description": "Personal live PDF viewing website with stable path",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "resume": "node resume.js"
+  },
+  "keywords": [],
+  "author": "Suman Roy",
+  "license": "ISC",
+  "dependencies": {
+    "simple-git": "^3.28.0"
+  }
+}
